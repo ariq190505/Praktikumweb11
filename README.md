@@ -40,17 +40,21 @@ CREATE TABLE kategori (
 
 ### 1. Membuat Model: `KategoriModel`
 Buat model untuk tabel `kategori`.
+
 ![Screenshot 2025-07-02 205844](https://github.com/user-attachments/assets/dbb21495-0de0-495b-b867-5e624441a246)
 
 ### 2. Memodifikasi Model: `ArticleModel`
 Tambahkan relasi ke `KategoriModel`.
+
 ![Screenshot 2025-07-02 205910](https://github.com/user-attachments/assets/08a98118-3401-4781-bab6-ae1fef06c6d4)
 
 
 ### 3. Memodifikasi Controller: `Artikel.php`
 Ubah controller untuk mengambil data artikel beserta kategori.
 <img width="695" alt="image" src="https://github.com/user-attachments/assets/46a4c449-d133-4917-9cab-d42f9d6cdd1b" />
+
 ![Screenshot 2025-07-02 212755](https://github.com/user-attachments/assets/a150fef5-aeb4-44b1-bbae-6929c176bb38)
+
 ![Screenshot 2025-07-02 212841](https://github.com/user-attachments/assets/eed97aa3-26b0-490d-bf18-5201c60dd3d2)
 
 
@@ -68,6 +72,7 @@ Ubah controller untuk mengambil data artikel beserta kategori.
 ## ✅ Testing Fitur
 - **Menambah Artikel**: Pastikan kategori tersimpan dengan benar.
 ![Screenshot 2025-07-02 215156](https://github.com/user-attachments/assets/b44bd007-464f-480e-b224-9c5671046cf4)
+
 ![Screenshot 2025-07-02 215216](https://github.com/user-attachments/assets/e0c0bed4-2670-4a4e-941b-48e6a52377f5)
 - **Mengedit Artikel**: Pastikan kategori dapat diubah.
 - *** Sebelum Di Edit 
@@ -85,6 +90,7 @@ Ubah controller untuk mengambil data artikel beserta kategori.
 
 ## Membuat AJAX Controller
 Controller ini menangani request data dinamis tanpa me-refresh halaman.
+
 ![Screenshot 2025-07-02 220030](https://github.com/user-attachments/assets/2db9034e-dc79-4ea4-bce2-777087ff5b12)
 
 ## Modifikasi Controller Artikel
@@ -130,10 +136,12 @@ $(document).ready(function() {
 
 ## Persiapan
 Gunakan REST Client seperti **Postman** untuk melakukan testing REST API.
+
 ![Screenshot 2025-07-02 220538](https://github.com/user-attachments/assets/c09ca422-b9e5-444e-8a8d-ef24c1cab2af)
 
 ## Membuat REST Controller
 Buat controller baru (`app/Controllers/Post.php`) yang berisi method untuk operasi CRUD melalui API.
+
 ![Screenshot 2025-07-02 220825](https://github.com/user-attachments/assets/6724c18f-5311-4ef2-ba20-2b7ea750f9a0)
 
 
@@ -151,8 +159,11 @@ Definisikan route untuk API di `app/Config/Routes.php`.
 ## Testing REST API
 Gunakan Postman untuk menguji setiap endpoint API yang telah dibuat.
 - **GET** `http://localhost:8080/post`
+- 
 ![Screenshot 2025-07-02 220426](https://github.com/user-attachments/assets/942288e8-ed29-48db-a6b1-fb125e7c7d74)
+
 - **GET** `http://localhost:8080/post/2`
+- 
 ![image](https://github.com/user-attachments/assets/4d57fd10-2393-4b7d-ad4c-b5387dfa2b32)
 
 ---
@@ -165,6 +176,7 @@ Gunakan Vue.js dan Axios melalui CDN untuk pengembangan yang lebih cepat tanpa b
 **Libraries:**
 - **Vue.js**: Untuk membuat komponen UI yang reaktif.
 ![image](https://github.com/user-attachments/assets/d89afcf5-38df-4f40-8b04-49a58f2c8fea)
+
 - **Axios**: Untuk komunikasi dengan REST API.
 ![image](https://github.com/user-attachments/assets/dd5e4a69-d467-464c-abf9-f928df6fa213)
 
