@@ -75,14 +75,18 @@ Ubah controller untuk mengambil data artikel beserta kategori.
 
 ![Screenshot 2025-07-02 215216](https://github.com/user-attachments/assets/e0c0bed4-2670-4a4e-941b-48e6a52377f5)
 - **Mengedit Artikel**: Pastikan kategori dapat diubah.
-- *** Sebelum Di Edit 
+*** Sebelum Di Edit
+
 ![Screenshot 2025-07-02 215357](https://github.com/user-attachments/assets/7f1b22fa-8d4a-4a0e-a35c-c8c988e81d4b)
-- *** Sesudah Di Edit
+
+*** Sesudah Di Edit
 ![Screenshot 2025-07-02 215542](https://github.com/user-attachments/assets/b247e8e6-7cdd-4743-a0c8-f7a0aec92397)
 - **Menghapus Artikel**: Pastikan artikel terhapus.
-- *** Sebelum
+
+*** Sebelum
 ![Screenshot 2025-07-02 215727](https://github.com/user-attachments/assets/f237eeeb-9cb3-4c88-9bb1-b458281a524b)
-- *** Sesudah
+
+*** Sesudah
 ![Screenshot 2025-07-02 215746](https://github.com/user-attachments/assets/a71d882a-0957-4738-8c07-eb26576766d5)
 ---
 
