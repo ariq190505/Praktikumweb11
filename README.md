@@ -78,8 +78,8 @@ Ubah controller untuk mengambil data artikel beserta kategori.
 *** Sebelum Di Edit
 
 ![Screenshot 2025-07-02 215357](https://github.com/user-attachments/assets/7f1b22fa-8d4a-4a0e-a35c-c8c988e81d4b)
+** Sesudah Di Edit
 
-*** Sesudah Di Edit
 ![Screenshot 2025-07-02 215542](https://github.com/user-attachments/assets/b247e8e6-7cdd-4743-a0c8-f7a0aec92397)
 - **Menghapus Artikel**: Pastikan artikel terhapus.
 
