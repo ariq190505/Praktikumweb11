@@ -35,47 +35,57 @@ CREATE TABLE kategori (
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 ```
-<!-- Sisipkan gambar hasil query SQL di sini -->
 
 ## 🛠️ MVC Implementation
 
 ### 1. Membuat Model: `KategoriModel`
 Buat model untuk tabel `kategori`.
-<!-- Sisipkan gambar KategoriModel.php di sini -->
+![Screenshot 2025-07-02 205844](https://github.com/user-attachments/assets/dbb21495-0de0-495b-b867-5e624441a246)
 
 ### 2. Memodifikasi Model: `ArticleModel`
 Tambahkan relasi ke `KategoriModel`.
-<!-- Sisipkan gambar modifikasi ArticleModel.php di sini -->
+![Screenshot 2025-07-02 205910](https://github.com/user-attachments/assets/08a98118-3401-4781-bab6-ae1fef06c6d4)
+
 
 ### 3. Memodifikasi Controller: `Artikel.php`
 Ubah controller untuk mengambil data artikel beserta kategori.
-<!-- Sisipkan gambar modifikasi controller Artikel.php di sini -->
+<img width="695" alt="image" src="https://github.com/user-attachments/assets/46a4c449-d133-4917-9cab-d42f9d6cdd1b" />
+![Screenshot 2025-07-02 212755](https://github.com/user-attachments/assets/a150fef5-aeb4-44b1-bbae-6929c176bb38)
+![Screenshot 2025-07-02 212841](https://github.com/user-attachments/assets/eed97aa3-26b0-490d-bf18-5201c60dd3d2)
+
 
 ### 4. Memodifikasi Views
 - **`view/artikel/index.php`**: Tampilkan nama kategori di halaman daftar artikel.
-<!-- Sisipkan gambar view/artikel/index.php di sini -->
+![Screenshot 2025-07-02 213115](https://github.com/user-attachments/assets/b32b2709-c0f1-4f72-8a7f-e95102147151)
 - **`view/artikel/admin_index.php`**: Tampilkan kategori di halaman admin.
-<!-- Sisipkan gambar view/artikel/admin_index.php di sini -->
+![Screenshot 2025-07-02 213230](https://github.com/user-attachments/assets/cec6801c-9eb2-4af7-a31a-0ddf556d474d)
+![Screenshot 2025-07-02 213243](https://github.com/user-attachments/assets/611fba1e-3221-4c9f-89ec-fea0dd64e9d5)
 - **`view/artikel/form_add.php`**: Tambahkan dropdown untuk memilih kategori saat menambah artikel.
-<!-- Sisipkan gambar view/artikel/form_add.php di sini -->
+![Screenshot 2025-07-02 213347](https://github.com/user-attachments/assets/e7f8ae84-1101-4937-8525-ff25bdd6d393)
 - **`view/artikel/form_edit.php`**: Tambahkan dropdown untuk memilih kategori saat mengedit artikel.
-<!-- Sisipkan gambar view/artikel/form_edit.php di sini -->
+![Screenshot 2025-07-02 213417](https://github.com/user-attachments/assets/2715dc2a-1751-4238-9e37-44d58785e13b)
 
 ## ✅ Testing Fitur
 - **Menambah Artikel**: Pastikan kategori tersimpan dengan benar.
-<!-- Sisipkan gambar testing tambah artikel di sini -->
+![Screenshot 2025-07-02 215156](https://github.com/user-attachments/assets/b44bd007-464f-480e-b224-9c5671046cf4)
+![Screenshot 2025-07-02 215216](https://github.com/user-attachments/assets/e0c0bed4-2670-4a4e-941b-48e6a52377f5)
 - **Mengedit Artikel**: Pastikan kategori dapat diubah.
-<!-- Sisipkan gambar testing edit artikel di sini -->
+- *** Sebelum Di Edit 
+![Screenshot 2025-07-02 215357](https://github.com/user-attachments/assets/7f1b22fa-8d4a-4a0e-a35c-c8c988e81d4b)
+- *** Sesudah Di Edit
+![Screenshot 2025-07-02 215542](https://github.com/user-attachments/assets/b247e8e6-7cdd-4743-a0c8-f7a0aec92397)
 - **Menghapus Artikel**: Pastikan artikel terhapus.
-<!-- Sisipkan gambar testing hapus artikel (sebelum dan sesudah) di sini -->
-
+- *** Sebelum
+![Screenshot 2025-07-02 215727](https://github.com/user-attachments/assets/f237eeeb-9cb3-4c88-9bb1-b458281a524b)
+- *** Sesudah
+![Screenshot 2025-07-02 215746](https://github.com/user-attachments/assets/a71d882a-0957-4738-8c07-eb26576766d5)
 ---
 
 # ⚙️ Modul 8 & 9: AJAX, Pagination, dan Pencarian
 
 ## Membuat AJAX Controller
 Controller ini menangani request data dinamis tanpa me-refresh halaman.
-<!-- Sisipkan gambar AJAX Controller di sini -->
+![Screenshot 2025-07-02 220030](https://github.com/user-attachments/assets/2db9034e-dc79-4ea4-bce2-777087ff5b12)
 
 ## Modifikasi Controller Artikel
 Ubah method `admin_index()` untuk mengembalikan JSON jika request adalah AJAX. Tambahkan logika untuk pagination dan pencarian.
@@ -120,11 +130,12 @@ $(document).ready(function() {
 
 ## Persiapan
 Gunakan REST Client seperti **Postman** untuk melakukan testing REST API.
-<!-- Sisipkan gambar aplikasi Postman di sini -->
+![Screenshot 2025-07-02 220538](https://github.com/user-attachments/assets/c09ca422-b9e5-444e-8a8d-ef24c1cab2af)
 
 ## Membuat REST Controller
 Buat controller baru (`app/Controllers/Post.php`) yang berisi method untuk operasi CRUD melalui API.
-<!-- Sisipkan gambar file PostController.php di sini -->
+![Screenshot 2025-07-02 220825](https://github.com/user-attachments/assets/6724c18f-5311-4ef2-ba20-2b7ea750f9a0)
+
 
 **Methods:**
 - `index()`: Menampilkan semua data (GET).
@@ -135,14 +146,14 @@ Buat controller baru (`app/Controllers/Post.php`) yang berisi method untuk opera
 
 ## Membuat Routing REST API
 Definisikan route untuk API di `app/Config/Routes.php`.
-<!-- Sisipkan gambar routing API di sini -->
+![image](https://github.com/user-attachments/assets/b347f10c-d8b7-4ac3-bd1e-28bf6e82da89)
 
 ## Testing REST API
 Gunakan Postman untuk menguji setiap endpoint API yang telah dibuat.
 - **GET** `http://localhost:8080/post`
-<!-- Sisipkan gambar testing GET all di Postman di sini -->
+![Screenshot 2025-07-02 220426](https://github.com/user-attachments/assets/942288e8-ed29-48db-a6b1-fb125e7c7d74)
 - **GET** `http://localhost:8080/post/2`
-<!-- Sisipkan gambar testing GET by ID di Postman di sini -->
+![image](https://github.com/user-attachments/assets/4d57fd10-2393-4b7d-ad4c-b5387dfa2b32)
 
 ---
 
@@ -153,18 +164,20 @@ Gunakan Vue.js dan Axios melalui CDN untuk pengembangan yang lebih cepat tanpa b
 
 **Libraries:**
 - **Vue.js**: Untuk membuat komponen UI yang reaktif.
-<!-- Sisipkan gambar CDN Vue.js di sini -->
+![image](https://github.com/user-attachments/assets/d89afcf5-38df-4f40-8b04-49a58f2c8fea)
 - **Axios**: Untuk komunikasi dengan REST API.
-<!-- Sisipkan gambar CDN Axios di sini -->
+![image](https://github.com/user-attachments/assets/dd5e4a69-d467-464c-abf9-f928df6fa213)
+
 
 ## Implementasi
 - **`index.html`**: Struktur dasar halaman untuk menampilkan data.
-<!-- Sisipkan gambar kode index.html di sini -->
+![Screenshot 2025-07-02 221413](https://github.com/user-attachments/assets/112350a3-fffa-45f2-98de-7a140c402d92)
 - **`apps.js`**: Logika Vue.js untuk mengambil data dari API menggunakan Axios dan menampilkannya di halaman.
-<!-- Sisipkan gambar kode apps.js di sini -->
+![Screenshot 2025-07-02 221527](https://github.com/user-attachments/assets/20de0264-dacf-43bc-aba4-94b103b7abd8)
 - **`style.css`**: Styling untuk tampilan.
-<!-- Sisipkan gambar kode style.css di sini -->
+![Screenshot 2025-07-02 221602](https://github.com/user-attachments/assets/f7aabd61-40d3-4620-9170-7b6b05298708)
 
 ## Hasil Output
 Tampilan akhir akan menampilkan daftar artikel yang diambil dari REST API CodeIgniter dan dirender oleh Vue.js.
-<!-- Sisipkan gambar hasil output akhir di sini -->
+![Screenshot 2025-07-02 215727](https://github.com/user-attachments/assets/7eb26748-2f64-4705-8095-bd65bc881f23)
+
