@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧪 Test Login Functionality</title>
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif; 
+            margin: 0; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: rgba(255,255,255,0.95); 
+            padding: 30px; 
+            border-radius: 20px; 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+        }
+        .test-section { 
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin: 8px;
+            box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(99, 102, 241, 0.6);
+        }
+        .btn-success {
+            background: linear-gradient(135deg, #10b981, #059669);
+            box-shadow: 0 5px 15px rgba(16, 185, 129, 0.4);
+        }
+        .btn-warning {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            box-shadow: 0 5px 15px rgba(245, 158, 11, 0.4);
+        }
+        .btn-info {
+            background: linear-gradient(135deg, #06b6d4, #0891b2);
+            box-shadow: 0 5px 15px rgba(6, 182, 212, 0.4);
+        }
+        h1, h2, h3 {
+            color: #1f2937;
+            text-align: center;
+        }
+        .highlight {
+            background: linear-gradient(135deg, #fef3c7, #fde68a);
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 5px solid #f59e0b;
+            margin: 25px 0;
+            text-align: center;
+        }
+        .test-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        .test-card {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid #e5e7eb;
+            transition: all 0.3s ease;
+        }
+        .test-card:hover {
+            border-color: #6366f1;
+            transform: translateY(-5px);
+        }
+        .test-card i {
+            font-size: 2rem;
+            color: #6366f1;
+            margin-bottom: 15px;
+        }
+        .status {
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin: 10px 5px;
+            display: inline-block;
+        }
+        .status.success {
+            background: #dcfce7;
+            color: #166534;
+        }
+        .status.warning {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        .status.error {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+        .result-box {
+            background: #f8fafc;
+            border: 2px dashed #d1d5db;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        #test-results {
+            margin-top: 20px;
+        }
+        .credentials-box {
+            background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+            border: 2px solid #bae6fd;
+        }
+        .credentials-box h4 {
+            color: #0f172a;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .credential-item {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 10px 15px;
+            border-radius: 10px;
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #e0f2fe;
+        }
+        .credential-item strong {
+            color: #1f2937;
+        }
+        .credential-item span {
+            color: #6366f1;
+            font-family: 'Courier New', monospace;
+            font-weight: 600;
+        }
+    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 style="margin-bottom: 1rem;">
+            <i class="fas fa-vial"></i> Test Login Functionality
+        </h1>
+        
+        <div class="highlight">
+            <h3><i class="fas fa-rocket"></i> Ready to Test!</h3>
+            <p>Mari test tampilan login yang baru dan pastikan semua fitur berfungsi dengan baik!</p>
+        </div>
+
+        <div class="credentials-box">
+            <h4>
+                <i class="fas fa-key"></i>
+                Demo Login Credentials
+            </h4>
+            <div class="credential-item">
+                <strong>Email:</strong>
+                <span>admin@email.com</span>
+            </div>
+            <div class="credential-item">
+                <strong>Password:</strong>
+                <span>admin123</span>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h3><i class="fas fa-play"></i> Quick Tests</h3>
+            
+            <div class="test-grid">
+                <div class="test-card">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <h4>Login Page</h4>
+                    <p>Test tampilan login yang baru</p>
+                    <a href="http://localhost/ci4/public/user/login" target="_blank" class="btn btn-success">
+                        Test Login
+                    </a>
+                </div>
+                
+                <div class="test-card">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <h4>Dashboard Access</h4>
+                    <p>Test akses ke admin dashboard</p>
+                    <button onclick="testDashboardAccess()" class="btn btn-info">
+                        Test Dashboard
+                    </button>
+                </div>
+                
+                <div class="test-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h4>Responsive Test</h4>
+                    <p>Test responsive design</p>
+                    <button onclick="testResponsive()" class="btn btn-warning">
+                        Test Mobile
+                    </button>
+                </div>
+                
+                <div class="test-card">
+                    <i class="fas fa-magic"></i>
+                    <h4>Animation Test</h4>
+                    <p>Test animasi dan effects</p>
+                    <button onclick="testAnimations()" class="btn">
+                        Test Effects
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h3><i class="fas fa-tools"></i> Automated Tests</h3>
+            <p>Klik tombol di bawah untuk menjalankan test otomatis:</p>
+            
+            <div style="text-align: center; margin: 20px 0;">
+                <button onclick="runAllTests()" class="btn btn-success">
+                    <i class="fas fa-play"></i> Run All Tests
+                </button>
+                <button onclick="clearResults()" class="btn btn-warning">
+                    <i class="fas fa-trash"></i> Clear Results
+                </button>
+            </div>
+            
+            <div id="test-results"></div>
+        </div>
+
+        <div class="result-box">
+            <h3><i class="fas fa-list-check"></i> Test Checklist</h3>
+            <div style="text-align: left; max-width: 600px; margin: 0 auto;">
+                <h4>Visual Design:</h4>
+                <p>✅ Glassmorphism background effect</p>
+                <p>✅ Animated floating elements</p>
+                <p>✅ Modern gradient colors</p>
+                <p>✅ Rounded corners dan shadows</p>
+                
+                <h4>Interactions:</h4>
+                <p>✅ Hover effects pada form elements</p>
+                <p>✅ Focus animations pada inputs</p>
+                <p>✅ Clickable demo credentials</p>
+                <p>✅ Button loading states</p>
+                
+                <h4>Functionality:</h4>
+                <p>✅ Form validation</p>
+                <p>✅ Error message display</p>
+                <p>✅ Successful login redirect</p>
+                <p>✅ Session management</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin: 3rem 0;">
+            <h3>🎯 Manual Testing Steps</h3>
+            <p>Untuk test manual yang lengkap:</p>
+            
+            <a href="http://localhost/ci4/public/user/login" target="_blank" class="btn btn-success">
+                <i class="fas fa-sign-in-alt"></i> Buka Login Page
+            </a>
+            
+            <a href="http://localhost/ci4/public/admin/artikel" target="_blank" class="btn">
+                <i class="fas fa-tachometer-alt"></i> Admin Dashboard
+            </a>
+            
+            <a href="http://localhost/lab8_vuejs/index.html" target="_blank" class="btn btn-warning">
+                <i class="fas fa-code"></i> Vue.js App
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function testDashboardAccess() {
+            // Check if user is logged in by trying to access dashboard
+            fetch('http://localhost/ci4/public/admin/artikel')
+                .then(response => {
+                    if (response.url.includes('login')) {
+                        alert('Anda belum login. Silakan login terlebih dahulu.');
+                        window.open('http://localhost/ci4/public/user/login', '_blank');
+                    } else {
+                        alert('Dashboard dapat diakses! Anda sudah login.');
+                        window.open('http://localhost/ci4/public/admin/artikel', '_blank');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Error testing dashboard access. Pastikan server berjalan.');
+                });
+        }
+
+        function testResponsive() {
+            const width = window.innerWidth;
+            if (width > 768) {
+                alert('Untuk test responsive:\n1. Buka halaman login\n2. Buka Developer Tools (F12)\n3. Toggle device toolbar\n4. Pilih mobile device\n5. Lihat perubahan layout');
+                window.open('http://localhost/ci4/public/user/login', '_blank');
+            } else {
+                alert('Anda sudah dalam mode mobile! Test responsive berhasil.');
+            }
+        }
+
+        function testAnimations() {
+            alert('Test animasi:\n1. Buka halaman login\n2. Hover pada form elements\n3. Klik pada demo credentials\n4. Perhatikan floating elements\n5. Test button hover effects');
+            window.open('http://localhost/ci4/public/user/login', '_blank');
+        }
+
+        function runAllTests() {
+            const resultsDiv = document.getElementById('test-results');
+            resultsDiv.innerHTML = '<p><i class="fas fa-spinner fa-spin"></i> Running tests...</p>';
+            
+            const tests = [
+                { name: 'Login Page Accessibility', url: 'http://localhost/ci4/public/user/login' },
+                { name: 'Admin Dashboard Accessibility', url: 'http://localhost/ci4/public/admin/artikel' },
+                { name: 'Home Page Accessibility', url: 'http://localhost/ci4/public/' }
+            ];
+            
+            let results = [];
+            let completed = 0;
+            
+            tests.forEach((test, index) => {
+                fetch(test.url)
+                    .then(response => {
+                        const status = response.ok ? 'success' : 'error';
+                        const message = response.ok ? 'Accessible' : `Error ${response.status}`;
+                        
+                        results[index] = {
+                            name: test.name,
+                            status: status,
+                            message: message
+                        };
+                    })
+                    .catch(error => {
+                        results[index] = {
+                            name: test.name,
+                            status: 'error',
+                            message: 'Connection failed'
+                        };
+                    })
+                    .finally(() => {
+                        completed++;
+                        if (completed === tests.length) {
+                            displayResults(results, resultsDiv);
+                        }
+                    });
+            });
+        }
+
+        function displayResults(results, resultsDiv) {
+            let html = '<h4>Test Results:</h4>';
+            let successCount = 0;
+            
+            results.forEach(result => {
+                const statusClass = result.status === 'success' ? 'success' : 'error';
+                const icon = result.status === 'success' ? 'fa-check' : 'fa-times';
+                
+                html += `
+                    <div style="margin: 10px 0; padding: 10px; background: #f8fafc; border-radius: 8px;">
+                        <i class="fas ${icon}"></i> 
+                        <strong>${result.name}:</strong> 
+                        <span class="status ${statusClass}">${result.message}</span>
+                    </div>
+                `;
+                
+                if (result.status === 'success') successCount++;
+            });
+            
+            resultsDiv.innerHTML = html;
+            
+            const percentage = Math.round((successCount / results.length) * 100);
+            html += `
+                <div style="margin-top: 20px;">
+                    <h4>Summary: ${successCount}/${results.length} tests passed (${percentage}%)</h4>
+                    <div style="background: #e5e7eb; border-radius: 10px; overflow: hidden;">
+                        <div style="background: #10b981; height: 20px; width: ${percentage}%; transition: width 0.5s ease;"></div>
+                    </div>
+                </div>
+            `;
+            
+            resultsDiv.innerHTML = html;
+        }
+
+        function clearResults() {
+            document.getElementById('test-results').innerHTML = '';
+        }
+    </script>
+</body>
+</html>

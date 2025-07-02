@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔗 Test Fitur Baca Selengkapnya</title>
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif; 
+            margin: 0; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            background: rgba(255,255,255,0.95); 
+            padding: 30px; 
+            border-radius: 20px; 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+        }
+        .test-section { 
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin: 8px;
+            box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(99, 102, 241, 0.6);
+        }
+        .btn-success {
+            background: linear-gradient(135deg, #10b981, #059669);
+            box-shadow: 0 5px 15px rgba(16, 185, 129, 0.4);
+        }
+        .btn-warning {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            box-shadow: 0 5px 15px rgba(245, 158, 11, 0.4);
+        }
+        .btn-info {
+            background: linear-gradient(135deg, #06b6d4, #0891b2);
+            box-shadow: 0 5px 15px rgba(6, 182, 212, 0.4);
+        }
+        h1, h2, h3 {
+            color: #1f2937;
+            text-align: center;
+        }
+        .highlight {
+            background: linear-gradient(135deg, #fef3c7, #fde68a);
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 5px solid #f59e0b;
+            margin: 25px 0;
+            text-align: center;
+        }
+        .test-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        .test-card {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid #e5e7eb;
+            transition: all 0.3s ease;
+        }
+        .test-card:hover {
+            border-color: #6366f1;
+            transform: translateY(-5px);
+        }
+        .test-card i {
+            font-size: 2rem;
+            color: #6366f1;
+            margin-bottom: 15px;
+        }
+        .status {
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin: 10px 5px;
+            display: inline-block;
+        }
+        .status.success {
+            background: #dcfce7;
+            color: #166534;
+        }
+        .status.warning {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        .status.error {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+        .result-box {
+            background: #f8fafc;
+            border: 2px dashed #d1d5db;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        #test-results {
+            margin-top: 20px;
+        }
+        .article-preview {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 4px solid #6366f1;
+            text-align: left;
+        }
+        .article-preview h4 {
+            margin: 0 0 10px 0;
+            color: #1f2937;
+        }
+        .article-preview p {
+            margin: 5px 0;
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+        .article-preview a {
+            color: #6366f1;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .article-preview a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 style="margin-bottom: 1rem;">
+            <i class="fas fa-link"></i> Test Fitur Baca Selengkapnya
+        </h1>
+        
+        <div class="highlight">
+            <h3><i class="fas fa-check-circle"></i> Fitur Sudah Diperbaiki!</h3>
+            <p>Link "Baca Selengkapnya" sekarang menggunakan slug yang proper dan sudah berfungsi dengan baik!</p>
+        </div>
+
+        <div class="test-section">
+            <h3><i class="fas fa-cog"></i> Perbaikan yang Dilakukan</h3>
+            <div class="test-grid">
+                <div class="test-card">
+                    <i class="fas fa-link"></i>
+                    <h4>Slug Generation</h4>
+                    <p>Otomatis generate slug dari judul artikel</p>
+                    <span class="status success">Fixed</span>
+                </div>
+                
+                <div class="test-card">
+                    <i class="fas fa-database"></i>
+                    <h4>Database Update</h4>
+                    <p>Menambahkan kolom slug dan updated_at</p>
+                    <span class="status success">Complete</span>
+                </div>
+                
+                <div class="test-card">
+                    <i class="fas fa-route"></i>
+                    <h4>Routing Fix</h4>
+                    <p>Perbaikan route untuk artikel detail</p>
+                    <span class="status success">Working</span>
+                </div>
+                
+                <div class="test-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Fallback System</h4>
+                    <p>Fallback jika slug tidak ditemukan</p>
+                    <span class="status success">Implemented</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h3><i class="fas fa-play"></i> Test Links</h3>
+            
+            <div style="text-align: center; margin: 20px 0;">
+                <button onclick="testArticleLinks()" class="btn btn-success">
+                    <i class="fas fa-search"></i> Test Article Links
+                </button>
+                <button onclick="loadArticleList()" class="btn btn-info">
+                    <i class="fas fa-list"></i> Load Article List
+                </button>
+                <button onclick="clearResults()" class="btn btn-warning">
+                    <i class="fas fa-trash"></i> Clear Results
+                </button>
+            </div>
+            
+            <div id="test-results"></div>
+        </div>
+
+        <div class="test-section">
+            <h3><i class="fas fa-external-link-alt"></i> Manual Testing</h3>
+            <p>Klik tombol di bawah untuk test manual:</p>
+            
+            <div style="text-align: center;">
+                <a href="http://localhost/ci4/public/artikel" target="_blank" class="btn btn-success">
+                    <i class="fas fa-newspaper"></i> Buka Daftar Artikel
+                </a>
+                
+                <a href="http://localhost/ci4/public/admin/artikel" target="_blank" class="btn">
+                    <i class="fas fa-cog"></i> Admin Dashboard
+                </a>
+                
+                <a href="http://localhost/lab8_vuejs/index.html" target="_blank" class="btn btn-warning">
+                    <i class="fas fa-code"></i> Vue.js App
+                </a>
+            </div>
+        </div>
+
+        <div class="result-box">
+            <h3><i class="fas fa-info-circle"></i> How It Works</h3>
+            <div style="text-align: left; max-width: 600px; margin: 0 auto;">
+                <h4>1. Slug Generation:</h4>
+                <p>• Otomatis generate slug dari judul artikel</p>
+                <p>• Format: "judul-artikel" (lowercase, dash-separated)</p>
+                <p>• Unique constraint untuk mencegah duplikasi</p>
+                
+                <h4>2. URL Structure:</h4>
+                <p>• <code>/artikel/{slug}</code> - URL dengan slug</p>
+                <p>• <code>/artikel/artikel-{id}</code> - Fallback dengan ID</p>
+                
+                <h4>3. Link Generation:</h4>
+                <p>• Menggunakan slug jika tersedia</p>
+                <p>• Fallback ke format artikel-{id} jika slug kosong</p>
+                
+                <h4>4. Controller Handling:</h4>
+                <p>• Cari artikel berdasarkan slug</p>
+                <p>• Jika tidak ditemukan, coba cari berdasarkan ID</p>
+                <p>• Return 404 jika tidak ditemukan</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function testArticleLinks() {
+            const resultsDiv = document.getElementById('test-results');
+            resultsDiv.innerHTML = '<p><i class="fas fa-spinner fa-spin"></i> Testing article links...</p>';
+            
+            // Test artikel index page
+            fetch('http://localhost/ci4/public/artikel')
+                .then(response => response.text())
+                .then(html => {
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(html, 'text/html');
+                    const readMoreLinks = doc.querySelectorAll('.read-more-btn');
+                    
+                    let results = '<h4>Test Results:</h4>';
+                    
+                    if (readMoreLinks.length > 0) {
+                        results += `<p class="status success">Found ${readMoreLinks.length} "Baca Selengkapnya" links</p>`;
+                        
+                        readMoreLinks.forEach((link, index) => {
+                            const href = link.getAttribute('href');
+                            results += `
+                                <div class="article-preview">
+                                    <h4>Article ${index + 1}</h4>
+                                    <p><strong>Link:</strong> <a href="${href}" target="_blank">${href}</a></p>
+                                    <p><strong>Status:</strong> <span class="status success">Ready to test</span></p>
+                                </div>
+                            `;
+                        });
+                    } else {
+                        results += '<p class="status warning">No "Baca Selengkapnya" links found. Make sure there are published articles.</p>';
+                    }
+                    
+                    resultsDiv.innerHTML = results;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    resultsDiv.innerHTML = '<p class="status error">Error testing links. Make sure server is running.</p>';
+                });
+        }
+
+        function loadArticleList() {
+            const resultsDiv = document.getElementById('test-results');
+            resultsDiv.innerHTML = '<p><i class="fas fa-spinner fa-spin"></i> Loading article list...</p>';
+            
+            fetch('http://localhost/ci4/public/post')
+                .then(response => response.json())
+                .then(data => {
+                    let results = '<h4>Available Articles:</h4>';
+                    
+                    if (data.artikel && data.artikel.length > 0) {
+                        data.artikel.forEach((article, index) => {
+                            const slug = article.slug || `artikel-${article.id}`;
+                            const detailUrl = `http://localhost/ci4/public/artikel/${slug}`;
+                            
+                            results += `
+                                <div class="article-preview">
+                                    <h4>${article.judul}</h4>
+                                    <p><strong>ID:</strong> ${article.id}</p>
+                                    <p><strong>Slug:</strong> ${article.slug || 'Not set'}</p>
+                                    <p><strong>Status:</strong> ${article.status == 1 ? 'Published' : 'Draft'}</p>
+                                    <p><strong>Detail URL:</strong> <a href="${detailUrl}" target="_blank">${detailUrl}</a></p>
+                                </div>
+                            `;
+                        });
+                    } else {
+                        results += '<p class="status warning">No articles found in database.</p>';
+                    }
+                    
+                    resultsDiv.innerHTML = results;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    resultsDiv.innerHTML = '<p class="status error">Error loading articles. Check API connection.</p>';
+                });
+        }
+
+        function clearResults() {
+            document.getElementById('test-results').innerHTML = '';
+        }
+
+        // Auto-load article list on page load
+        window.onload = function() {
+            setTimeout(loadArticleList, 1000);
+        };
+    </script>
+</body>
+</html>

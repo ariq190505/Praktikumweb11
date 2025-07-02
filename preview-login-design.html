@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎨 Preview Login Design Baru</title>
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif; 
+            margin: 0; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            background: rgba(255,255,255,0.95); 
+            padding: 30px; 
+            border-radius: 20px; 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+        }
+        .preview-section { 
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        .feature-card {
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-card i {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin: 10px;
+            box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(99, 102, 241, 0.6);
+        }
+        .btn-success {
+            background: linear-gradient(135deg, #10b981, #059669);
+            box-shadow: 0 5px 15px rgba(16, 185, 129, 0.4);
+        }
+        .btn-warning {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            box-shadow: 0 5px 15px rgba(245, 158, 11, 0.4);
+        }
+        h1, h2, h3 {
+            color: #1f2937;
+            text-align: center;
+        }
+        .highlight {
+            background: linear-gradient(135deg, #fef3c7, #fde68a);
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 5px solid #f59e0b;
+            margin: 25px 0;
+            text-align: center;
+        }
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 25px 0;
+        }
+        .before, .after {
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        .before {
+            background: #fee2e2;
+            border: 2px solid #fca5a5;
+        }
+        .after {
+            background: #dcfce7;
+            border: 2px solid #86efac;
+        }
+        .mockup {
+            background: #f8fafc;
+            border: 2px dashed #d1d5db;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 25px 0;
+            text-align: center;
+        }
+        .features-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .feature-item {
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #6366f1;
+        }
+        .feature-item h4 {
+            margin: 0 0 10px 0;
+            color: #1f2937;
+        }
+        .feature-item p {
+            margin: 0;
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            .comparison {
+                grid-template-columns: 1fr;
+            }
+            .container {
+                margin: 10px;
+                padding: 20px;
+            }
+        }
+    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 style="margin-bottom: 1rem;">
+            <i class="fas fa-palette"></i> Login Design Sudah Diperbaiki!
+        </h1>
+        
+        <div class="highlight">
+            <h3><i class="fas fa-magic"></i> Modern Login Experience!</h3>
+            <p>Tampilan login sekarang memiliki design modern dengan animasi, glassmorphism effect, dan user experience yang jauh lebih baik!</p>
+        </div>
+
+        <div class="comparison">
+            <div class="before">
+                <h3><i class="fas fa-times-circle"></i> Sebelum</h3>
+                <ul style="text-align: left;">
+                    <li>Design sederhana dan polos</li>
+                    <li>Tidak ada animasi</li>
+                    <li>Form input biasa</li>
+                    <li>Tidak ada visual feedback</li>
+                    <li>Tampilan monoton</li>
+                </ul>
+            </div>
+            <div class="after">
+                <h3><i class="fas fa-check-circle"></i> Sesudah</h3>
+                <ul style="text-align: left;">
+                    <li>Modern glassmorphism design</li>
+                    <li>Smooth animations & transitions</li>
+                    <li>Interactive form elements</li>
+                    <li>Visual feedback & hover effects</li>
+                    <li>Floating background elements</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="preview-section">
+            <h3><i class="fas fa-star"></i> Fitur-Fitur Baru</h3>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-gem"></i>
+                    <h4>Glassmorphism Effect</h4>
+                    <p>Background blur dengan transparency untuk tampilan modern</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-magic"></i>
+                    <h4>Smooth Animations</h4>
+                    <p>Slide-up animation, floating elements, dan hover effects</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-mouse-pointer"></i>
+                    <h4>Interactive Elements</h4>
+                    <p>Clickable demo credentials dan visual feedback</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Modern Logo</h4>
+                    <p>Animated logo dengan gradient dan pulse effect</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h4>Responsive Design</h4>
+                    <p>Optimal di desktop, tablet, dan mobile devices</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-palette"></i>
+                    <h4>Modern Color Scheme</h4>
+                    <p>Purple gradient dengan accent colors yang konsisten</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="preview-section">
+            <h3><i class="fas fa-list-check"></i> Design Elements</h3>
+            
+            <div class="features-list">
+                <div class="feature-item">
+                    <h4><i class="fas fa-eye"></i> Visual Design</h4>
+                    <p>Glassmorphism background, gradient colors, rounded corners</p>
+                </div>
+                <div class="feature-item">
+                    <h4><i class="fas fa-hand-pointer"></i> Interactions</h4>
+                    <p>Hover effects, focus animations, clickable demo credentials</p>
+                </div>
+                <div class="feature-item">
+                    <h4><i class="fas fa-play"></i> Animations</h4>
+                    <p>Slide-up entrance, floating elements, button hover effects</p>
+                </div>
+                <div class="feature-item">
+                    <h4><i class="fas fa-edit"></i> Form Design</h4>
+                    <p>Modern input fields dengan icons dan focus states</p>
+                </div>
+                <div class="feature-item">
+                    <h4><i class="fas fa-exclamation-triangle"></i> Error Handling</h4>
+                    <p>Animated error messages dengan icons</p>
+                </div>
+                <div class="feature-item">
+                    <h4><i class="fas fa-info-circle"></i> Demo Info</h4>
+                    <p>Interactive demo credentials dengan visual feedback</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mockup">
+            <h3><i class="fas fa-desktop"></i> Design Preview</h3>
+            <p><strong>Background:</strong> Animated floating elements dengan glassmorphism</p>
+            <p><strong>Container:</strong> Backdrop blur dengan rounded corners</p>
+            <p><strong>Logo:</strong> Animated shield icon dengan pulse effect</p>
+            <p><strong>Form:</strong> Modern inputs dengan icons dan hover states</p>
+            <p><strong>Button:</strong> Gradient dengan shimmer effect</p>
+        </div>
+
+        <div style="text-align: center; margin: 3rem 0;">
+            <h3>🚀 Test Login Design Baru!</h3>
+            <p>Klik tombol di bawah untuk melihat tampilan login yang sudah diperbaiki:</p>
+            
+            <a href="http://localhost/ci4/public/user/login" target="_blank" class="btn btn-success">
+                <i class="fas fa-sign-in-alt"></i> Buka Halaman Login
+            </a>
+            
+            <a href="http://localhost/ci4/public/admin/artikel" target="_blank" class="btn">
+                <i class="fas fa-tachometer-alt"></i> Dashboard Admin
+            </a>
+            
+            <a href="http://localhost/lab8_vuejs/index.html" target="_blank" class="btn btn-warning">
+                <i class="fas fa-code"></i> Vue.js App
+            </a>
+        </div>
+
+        <div class="highlight">
+            <h3><i class="fas fa-lightbulb"></i> Tips Testing</h3>
+            <p>Coba klik pada demo credentials untuk auto-fill!</p>
+            <p>Hover pada form elements untuk melihat animasi</p>
+            <p>Test responsive design dengan resize browser</p>
+        </div>
+    </div>
+</body>
+</html>

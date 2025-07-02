@@ -1,0 +1,320 @@
+DEBUG - 2025-06-27 01:19:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 01:19:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 01:19:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 01:19:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 01:19:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 01:19:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 01:19:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 01:32:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 01:32:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 01:32:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 01:32:54 --> POST request received
+DEBUG - 2025-06-27 01:32:54 --> Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7GD7VD9sxldcpoJM
+DEBUG - 2025-06-27 01:32:54 --> POST data: {"judul":"daffa ","isi":"1234","status":"1"}
+DEBUG - 2025-06-27 01:32:54 --> Form data: {"judul":"daffa ","isi":"1234","status":"1"}
+DEBUG - 2025-06-27 01:33:20 --> POST request received
+DEBUG - 2025-06-27 01:33:20 --> Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryiPW33YaTme5VSovB
+DEBUG - 2025-06-27 01:33:20 --> POST data: {"judul":"daffa ","isi":"1234","status":"1"}
+DEBUG - 2025-06-27 01:33:20 --> Form data: {"judul":"daffa ","isi":"1234","status":"1"}
+DEBUG - 2025-06-27 01:33:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 01:34:56 --> POST request received
+DEBUG - 2025-06-27 01:34:56 --> Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryLNfrU3rqKnZithsW
+DEBUG - 2025-06-27 01:34:56 --> POST data: {"judul":"1234","isi":"1234","status":"1"}
+DEBUG - 2025-06-27 01:34:56 --> Form data: {"judul":"1234","isi":"1234","status":"1"}
+ERROR - 2025-06-27 01:35:01 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\XAMPP\htdocs\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\XAMPP\htdocs\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sukses', 3306, '', 0)
+#1 D:\XAMPP\htdocs\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\XAMPP\htdocs\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\XAMPP\htdocs\ci4\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ar...', Array, false)
+#4 D:\XAMPP\htdocs\ci4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\XAMPP\htdocs\ci4\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 D:\XAMPP\htdocs\ci4\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\XAMPP\htdocs\ci4\app\Controllers\Post.php(89): CodeIgniter\Model->insert(Array)
+#8 D:\XAMPP\htdocs\ci4\system\CodeIgniter.php(933): App\Controllers\Post->create()
+#9 D:\XAMPP\htdocs\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#10 D:\XAMPP\htdocs\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\XAMPP\htdocs\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\XAMPP\htdocs\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\XAMPP\htdocs\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\XAMPP\htdocs\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\XAMPP\htdocs\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\XAMPP\htdocs\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\XAMPP\htdocs\ci4\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ar...', Array, false)
+#3 D:\XAMPP\htdocs\ci4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#4 D:\XAMPP\htdocs\ci4\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#5 D:\XAMPP\htdocs\ci4\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#6 D:\XAMPP\htdocs\ci4\app\Controllers\Post.php(89): CodeIgniter\Model->insert(Array)
+#7 D:\XAMPP\htdocs\ci4\system\CodeIgniter.php(933): App\Controllers\Post->create()
+#8 D:\XAMPP\htdocs\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#9 D:\XAMPP\htdocs\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\XAMPP\htdocs\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\XAMPP\htdocs\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\XAMPP\htdocs\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-06-27 01:35:11 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\XAMPP\htdocs\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\XAMPP\htdocs\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sukses', 3306, '', 0)
+#1 D:\XAMPP\htdocs\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\XAMPP\htdocs\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\XAMPP\htdocs\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `artikel...', Array, false)
+#4 D:\XAMPP\htdocs\ci4\app\Models\ArtikelModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\XAMPP\htdocs\ci4\app\Controllers\Artikel.php(14): App\Models\ArtikelModel->getArtikelDenganKategori()
+#6 D:\XAMPP\htdocs\ci4\system\CodeIgniter.php(933): App\Controllers\Artikel->index()
+#7 D:\XAMPP\htdocs\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#8 D:\XAMPP\htdocs\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\XAMPP\htdocs\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\XAMPP\htdocs\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\XAMPP\htdocs\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\XAMPP\htdocs\ci4\system\rewrite.php(44): require_once('D:\\XAMPP\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\XAMPP\htdocs\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\XAMPP\htdocs\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\XAMPP\htdocs\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\XAMPP\htdocs\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `artikel...', Array, false)
+#3 D:\XAMPP\htdocs\ci4\app\Models\ArtikelModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\XAMPP\htdocs\ci4\app\Controllers\Artikel.php(14): App\Models\ArtikelModel->getArtikelDenganKategori()
+#5 D:\XAMPP\htdocs\ci4\system\CodeIgniter.php(933): App\Controllers\Artikel->index()
+#6 D:\XAMPP\htdocs\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#7 D:\XAMPP\htdocs\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\XAMPP\htdocs\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 D:\XAMPP\htdocs\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 D:\XAMPP\htdocs\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 D:\XAMPP\htdocs\ci4\system\rewrite.php(44): require_once('D:\\XAMPP\\htdocs...')
+#12 {main}
+CRITICAL - 2025-06-27 01:35:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: artikel]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `artikel`.*, `kategori`.`nama_kategori`
+FROM `artikel`
+LEFT JOIN `kategori` ON `kategori`.`id_kategori` = `artikel`.`id_kategori`
+ORDER BY `artikel`.`id` DESC', [], false)
+ 3 APPPATH\Models\ArtikelModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Artikel.php(14): App\Models\ArtikelModel->getArtikelDenganKategori()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Artikel->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\XAMPP\\htdocs\\ci4\\public\\index.php')
+DEBUG - 2025-06-27 01:35:27 --> POST request received
+DEBUG - 2025-06-27 01:35:27 --> Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryGPA11UGeBNDh7c4N
+DEBUG - 2025-06-27 01:35:27 --> POST data: {"judul":"1234","isi":"1234","status":"1"}
+DEBUG - 2025-06-27 01:35:27 --> Form data: {"judul":"1234","isi":"1234","status":"1"}
+ERROR - 2025-06-27 01:35:31 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\XAMPP\htdocs\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\XAMPP\htdocs\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sukses', 3306, '', 0)
+#1 D:\XAMPP\htdocs\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\XAMPP\htdocs\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\XAMPP\htdocs\ci4\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ar...', Array, false)
+#4 D:\XAMPP\htdocs\ci4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\XAMPP\htdocs\ci4\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 D:\XAMPP\htdocs\ci4\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\XAMPP\htdocs\ci4\app\Controllers\Post.php(89): CodeIgniter\Model->insert(Array)
+#8 D:\XAMPP\htdocs\ci4\system\CodeIgniter.php(933): App\Controllers\Post->create()
+#9 D:\XAMPP\htdocs\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#10 D:\XAMPP\htdocs\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\XAMPP\htdocs\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\XAMPP\htdocs\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\XAMPP\htdocs\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\XAMPP\htdocs\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\XAMPP\htdocs\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\XAMPP\htdocs\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\XAMPP\htdocs\ci4\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ar...', Array, false)
+#3 D:\XAMPP\htdocs\ci4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#4 D:\XAMPP\htdocs\ci4\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#5 D:\XAMPP\htdocs\ci4\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#6 D:\XAMPP\htdocs\ci4\app\Controllers\Post.php(89): CodeIgniter\Model->insert(Array)
+#7 D:\XAMPP\htdocs\ci4\system\CodeIgniter.php(933): App\Controllers\Post->create()
+#8 D:\XAMPP\htdocs\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+#9 D:\XAMPP\htdocs\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\XAMPP\htdocs\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\XAMPP\htdocs\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\XAMPP\htdocs\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-06-27 01:35:42 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\XAMPP\htdocs\ci4\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\XAMPP\htdocs\ci4\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sukses', 3306, '', 0)
+#1 D:\XAMPP\htdocs\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\XAMPP\htdocs\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\XAMPP\htdocs\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `artikel...', Array, false)
+#4 D:\XAMPP\htdocs\ci4\app\Models\ArtikelModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\XAMPP\htdocs\ci4\app\Controllers\Artikel.php(14): App\Models\ArtikelModel->getArtikelDenganKategori()
+#6 D:\XAMPP\htdocs\ci4\system\CodeIgniter.php(933): App\Controllers\Artikel->index()
+#7 D:\XAMPP\htdocs\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#8 D:\XAMPP\htdocs\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\XAMPP\htdocs\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\XAMPP\htdocs\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\XAMPP\htdocs\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\XAMPP\htdocs\ci4\system\rewrite.php(44): require_once('D:\\XAMPP\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\XAMPP\htdocs\ci4\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\XAMPP\htdocs\ci4\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\XAMPP\htdocs\ci4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\XAMPP\htdocs\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `artikel...', Array, false)
+#3 D:\XAMPP\htdocs\ci4\app\Models\ArtikelModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\XAMPP\htdocs\ci4\app\Controllers\Artikel.php(14): App\Models\ArtikelModel->getArtikelDenganKategori()
+#5 D:\XAMPP\htdocs\ci4\system\CodeIgniter.php(933): App\Controllers\Artikel->index()
+#6 D:\XAMPP\htdocs\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#7 D:\XAMPP\htdocs\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\XAMPP\htdocs\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 D:\XAMPP\htdocs\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 D:\XAMPP\htdocs\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 D:\XAMPP\htdocs\ci4\system\rewrite.php(44): require_once('D:\\XAMPP\\htdocs...')
+#12 {main}
+CRITICAL - 2025-06-27 01:35:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: artikel]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `artikel`.*, `kategori`.`nama_kategori`
+FROM `artikel`
+LEFT JOIN `kategori` ON `kategori`.`id_kategori` = `artikel`.`id_kategori`
+ORDER BY `artikel`.`id` DESC', [], false)
+ 3 APPPATH\Models\ArtikelModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Artikel.php(14): App\Models\ArtikelModel->getArtikelDenganKategori()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Artikel->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\XAMPP\\htdocs\\ci4\\public\\index.php')
+DEBUG - 2025-06-27 01:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 01:40:46 --> POST request received
+DEBUG - 2025-06-27 01:40:46 --> Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryd82akHhbHAYyNkGf
+DEBUG - 2025-06-27 01:40:46 --> POST data: {"judul":"1234","isi":"1234","status":"1"}
+DEBUG - 2025-06-27 01:40:46 --> Form data: {"judul":"1234","isi":"1234","status":"1"}
+DEBUG - 2025-06-27 01:40:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 01:42:27 --> POST request received
+DEBUG - 2025-06-27 01:42:27 --> Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryxQ5Xcbl3xepkKMal
+DEBUG - 2025-06-27 01:42:27 --> POST data: {"judul":"Pemandangan","isi":"pemandangan yang indah","status":"1"}
+DEBUG - 2025-06-27 01:42:27 --> Form data: {"judul":"Pemandangan","isi":"pemandangan yang indah","status":"1"}
+DEBUG - 2025-06-27 01:42:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 01:47:18 --> POST request received
+DEBUG - 2025-06-27 01:47:18 --> Content-Type: multipart/form-data; boundary=----WebKitFormBoundarywZJbZ9ES1oxamd08
+DEBUG - 2025-06-27 01:47:18 --> POST data: {"judul":"Pemandangan","isi":"pemandangan yang indah","status":"1"}
+DEBUG - 2025-06-27 01:47:18 --> Form data: {"judul":"Pemandangan","isi":"pemandangan yang indah","status":"1"}
+DEBUG - 2025-06-27 01:53:59 --> POST request received
+DEBUG - 2025-06-27 01:53:59 --> Content-Type: multipart/form-data; boundary=----WebKitFormBoundarymAX5fhcBScj2pBwi
+DEBUG - 2025-06-27 01:53:59 --> POST data: {"judul":"iii","isi":"ssshs","status":"1"}
+DEBUG - 2025-06-27 01:53:59 --> Form data: {"judul":"iii","isi":"ssshs","status":"1"}
+DEBUG - 2025-06-27 01:54:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 04:03:03 --> POST request received
+DEBUG - 2025-06-27 04:03:03 --> Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryR9BXQSEDea6bxwq9
+DEBUG - 2025-06-27 04:03:03 --> POST data: {"judul":"gggg","isi":"hhh","status":"1"}
+DEBUG - 2025-06-27 04:03:03 --> Form data: {"judul":"gggg","isi":"hhh","status":"1"}
+DEBUG - 2025-06-27 04:03:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 04:12:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 04:12:51 --> POST request received
+DEBUG - 2025-06-27 04:12:51 --> Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryBYwyBPQQtEzWTIhf
+DEBUG - 2025-06-27 04:12:51 --> POST data: {"judul":"wjwjw","isi":"wwjwjw","status":"1"}
+DEBUG - 2025-06-27 04:12:51 --> Form data: {"judul":"wjwjw","isi":"wwjwjw","status":"1"}
+DEBUG - 2025-06-27 04:12:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 06:34:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-27 06:46:28 --> CodeIgniter\Exceptions\ConfigException: If wildcard is specified, you must set `'allowedOrigins' => ['*']`. But using wildcard is not recommended.
+[Method: GET, Route: post]
+in SYSTEMPATH\HTTP\Cors.php on line 108.
+ 1 SYSTEMPATH\HTTP\Cors.php(134): CodeIgniter\HTTP\Cors->checkWildcard('allowedOrigins', 8)
+ 2 SYSTEMPATH\HTTP\Cors.php(211): CodeIgniter\HTTP\Cors->setAllowOrigin(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 3 SYSTEMPATH\Filters\Cors.php(109): CodeIgniter\HTTP\Cors->addResponseHeaders(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 4 SYSTEMPATH\Filters\Filters.php(278): CodeIgniter\Filters\Cors->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 5 SYSTEMPATH\Filters\Filters.php(225): CodeIgniter\Filters\Filters->runAfter([...])
+ 6 SYSTEMPATH\CodeIgniter.php(525): CodeIgniter\Filters\Filters->run('post', 'after')
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-27 06:46:28 --> CodeIgniter\Exceptions\ConfigException: If wildcard is specified, you must set `'allowedOrigins' => ['*']`. But using wildcard is not recommended.
+[Method: GET, Route: post]
+in SYSTEMPATH\HTTP\Cors.php on line 108.
+ 1 SYSTEMPATH\HTTP\Cors.php(134): CodeIgniter\HTTP\Cors->checkWildcard('allowedOrigins', 8)
+ 2 SYSTEMPATH\HTTP\Cors.php(211): CodeIgniter\HTTP\Cors->setAllowOrigin(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 3 SYSTEMPATH\Filters\Cors.php(109): CodeIgniter\HTTP\Cors->addResponseHeaders(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 4 SYSTEMPATH\Filters\Filters.php(278): CodeIgniter\Filters\Cors->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 5 SYSTEMPATH\Filters\Filters.php(225): CodeIgniter\Filters\Filters->runAfter([...])
+ 6 SYSTEMPATH\CodeIgniter.php(525): CodeIgniter\Filters\Filters->run('post', 'after')
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-27 06:46:28 --> CodeIgniter\Exceptions\ConfigException: If wildcard is specified, you must set `'allowedOrigins' => ['*']`. But using wildcard is not recommended.
+[Method: GET, Route: post]
+in SYSTEMPATH\HTTP\Cors.php on line 108.
+ 1 SYSTEMPATH\HTTP\Cors.php(134): CodeIgniter\HTTP\Cors->checkWildcard('allowedOrigins', 8)
+ 2 SYSTEMPATH\HTTP\Cors.php(211): CodeIgniter\HTTP\Cors->setAllowOrigin(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 3 SYSTEMPATH\Filters\Cors.php(109): CodeIgniter\HTTP\Cors->addResponseHeaders(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 4 SYSTEMPATH\Filters\Filters.php(278): CodeIgniter\Filters\Cors->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 5 SYSTEMPATH\Filters\Filters.php(225): CodeIgniter\Filters\Filters->runAfter([...])
+ 6 SYSTEMPATH\CodeIgniter.php(525): CodeIgniter\Filters\Filters->run('post', 'after')
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-27 07:00:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-27 07:00:12 --> CodeIgniter\Exceptions\ConfigException: If wildcard is specified, you must set `'allowedOrigins' => ['*']`. But using wildcard is not recommended.
+[Method: GET, Route: post]
+in SYSTEMPATH\HTTP\Cors.php on line 108.
+ 1 SYSTEMPATH\HTTP\Cors.php(134): CodeIgniter\HTTP\Cors->checkWildcard('allowedOrigins', 8)
+ 2 SYSTEMPATH\HTTP\Cors.php(211): CodeIgniter\HTTP\Cors->setAllowOrigin(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 3 SYSTEMPATH\Filters\Cors.php(109): CodeIgniter\HTTP\Cors->addResponseHeaders(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 4 SYSTEMPATH\Filters\Filters.php(278): CodeIgniter\Filters\Cors->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 5 SYSTEMPATH\Filters\Filters.php(225): CodeIgniter\Filters\Filters->runAfter([...])
+ 6 SYSTEMPATH\CodeIgniter.php(525): CodeIgniter\Filters\Filters->run('post', 'after')
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-27 07:00:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-27 07:00:13 --> CodeIgniter\Exceptions\ConfigException: If wildcard is specified, you must set `'allowedOrigins' => ['*']`. But using wildcard is not recommended.
+[Method: GET, Route: post]
+in SYSTEMPATH\HTTP\Cors.php on line 108.
+ 1 SYSTEMPATH\HTTP\Cors.php(134): CodeIgniter\HTTP\Cors->checkWildcard('allowedOrigins', 8)
+ 2 SYSTEMPATH\HTTP\Cors.php(211): CodeIgniter\HTTP\Cors->setAllowOrigin(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 3 SYSTEMPATH\Filters\Cors.php(109): CodeIgniter\HTTP\Cors->addResponseHeaders(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 4 SYSTEMPATH\Filters\Filters.php(278): CodeIgniter\Filters\Cors->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 5 SYSTEMPATH\Filters\Filters.php(225): CodeIgniter\Filters\Filters->runAfter([...])
+ 6 SYSTEMPATH\CodeIgniter.php(525): CodeIgniter\Filters\Filters->run('post', 'after')
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-27 07:02:52 --> POST request received
+DEBUG - 2025-06-27 07:02:52 --> Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryCjTB6weKAo3q36IB
+DEBUG - 2025-06-27 07:02:52 --> POST data: {"judul":"ppp","isi":"[ppp","status":"1"}
+DEBUG - 2025-06-27 07:02:52 --> Form data: {"judul":"ppp","isi":"[ppp","status":"1"}
+CRITICAL - 2025-06-27 07:02:52 --> CodeIgniter\Exceptions\ConfigException: If wildcard is specified, you must set `'allowedOrigins' => ['*']`. But using wildcard is not recommended.
+[Method: POST, Route: post]
+in SYSTEMPATH\HTTP\Cors.php on line 108.
+ 1 SYSTEMPATH\HTTP\Cors.php(134): CodeIgniter\HTTP\Cors->checkWildcard('allowedOrigins', 8)
+ 2 SYSTEMPATH\HTTP\Cors.php(211): CodeIgniter\HTTP\Cors->setAllowOrigin(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 3 SYSTEMPATH\Filters\Cors.php(109): CodeIgniter\HTTP\Cors->addResponseHeaders(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+ 4 SYSTEMPATH\Filters\Filters.php(278): CodeIgniter\Filters\Cors->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+ 5 SYSTEMPATH\Filters\Filters.php(225): CodeIgniter\Filters\Filters->runAfter([...])
+ 6 SYSTEMPATH\CodeIgniter.php(525): CodeIgniter\Filters\Filters->run('post', 'after')
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-27 07:03:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 07:03:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 07:07:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 07:07:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 07:12:02 --> POST request received
+DEBUG - 2025-06-27 07:12:02 --> Content-Type: multipart/form-data; boundary=----WebKitFormBoundarycLlcLTcYBeEqzovT
+DEBUG - 2025-06-27 07:12:02 --> POST data: {"judul":"wggwgwgw","isi":"gwgwwyw","status":"1"}
+DEBUG - 2025-06-27 07:12:02 --> Form data: {"judul":"wggwgwgw","isi":"gwgwwyw","status":"1"}
+DEBUG - 2025-06-27 07:12:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
